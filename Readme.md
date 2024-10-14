@@ -189,7 +189,7 @@ class Mahasiswa {
     private $nama;
     private $nim;
     private $jurusan;
-
+    //construct
     public function __construct($nama, $nim, $jurusan) {
         $this->nama = $nama;
         $this->nim = $nim;
@@ -197,13 +197,13 @@ class Mahasiswa {
 
 
     }
-
+    //tapilData
     public function tampilakanData() {
         return "Saya $this->nama<br> dengan $this->nim<br> dari $this->jurusan.";
 
     }
 }
-
+//menampilkan data
 $mahasiswa1 = new mahasiswa("JosindoRaditAlbaran", "230302064", "TeknikInformatika");
 echo $mahasiswa1->tampilakanData();
 
@@ -226,7 +226,7 @@ class Mahasiswa {
     private $nama;
     private $nim;
     private $jurusan;
-
+    //function construct
     public function __construct($nama, $nim, $jurusan) {
         $this->nama = $nama;
         $this->nim = $nim;
@@ -234,31 +234,37 @@ class Mahasiswa {
 
 
     }
-
+    //function tampilData
     public function tampilakanData() {
         return "Saya $this->nama<br> dengan $this->nim<br> dari $this->jurusan.";
 
     }
+    //setter
     public function setNama($newNama){
         $this->nama = $newNama;
     }
+    //setter
     public function setNim($newNim){
         $this->nim = $newNim;
     }
+    //setter
     public function setJurusan($newJurusan){
         $this->jurusan = $newJurusan;
     }
+    //getter
     public function getNama(){
         echo "nama $this->nama<br>";
     }
+    //getter
     public function getNim(){
         echo "Nim $this->nim<br>";
     }
+    //getter
     public function getJurusan(){
         echo "Jurusan $this->jurusan<br>";
     }
 
-}
+}//menampilan data
 $mahasiswa1 = new mahasiswa("", "", "");
 
 $mahasiswa1->setNama ("Darno");
@@ -279,33 +285,37 @@ suatu class diturunkan kepada class lain dalam sebuah hierarki class.
 
 ```php
 <?php
+//membuat class dan objek
 class Pengguna {
     public $nama;
     
-
+    //function construct
     public function __construct($nama) {
         $this->nama = $nama;
     }
 
+    //getter
     public function getNama(){
         echo "nama $this->nama<br>";
     }
 } 
 
+//membuat class turunan dari pengguna
 class Dosen extends pengguna{
     public $mataKuliah;
-
+    //function construct
     public function __construct($nama, $mataKuliah) {
         parent::__construct($nama);
         $this->mataKuliah = $mataKuliah;
     }
+    //getter
     public function getmataKuliah(){
         echo "mataKuliah $this->mataKuliah<br>";
 
     }
 
 }
-
+//menampilkan data
 $mahasiswa2 = new Dosen(nama : "KUYA", mataKuliah : "Inggris");
 $mahasiswa2->getNama();
 $mahasiswa2->getmataKuliah();
@@ -323,37 +333,40 @@ mengeksekusi atau berbagi antarmuka yang sama.
 
 ```php
 <?php
+//membuat class pengguna
     class pengguna {
     public $nama;
     
-
+    //function construct
     public function __construct($nama) {
         $this->nama = $nama;
     }
-
+    //gettter
     public function getNama(){
         echo "nama $this->nama<br>";
     }
 } 
-
+//membuat class turunan dari pengguna
 class Dosen extends pengguna{
     public $mataKuliah;
-
+    //function construct
     public function __construct($nama, $mataKuliah) {
         parent::__construct($nama);
         $this->mataKuliah = $mataKuliah;
     }
+    //getter
     public function getmataKuliah(){
         echo "mataKuliah $this->mataKuliah<br>";
 
     }
+    //function akses Fitur
     public function aksesFitur(){
         echo "Fitur Terbatas";
 
     }
 
 }
-
+//menampilakan data
 $mahasiswa2 = new Dosen(nama : "KUYA", mataKuliah : "Inggris");
 $mahasiswa2->getNama();
 $mahasiswa2->getmataKuliah();
@@ -370,32 +383,32 @@ Sebuah class yang tidak bisa digunakan untuk instansiasi
 
 ```php
 <?php
-
+//membuat class pengguna
 abstract class Pengguna{
     protected $nama;
-
+    //function construct
     public function __construct($nama)
     {
         $this->nama = $nama;
     }
-
+    //function askses Fitur
     abstract public function aksesFitur ();
 }
-
+//membuat class dari turunan pengguna
 class Dosen extends Pengguna {
     private $matakuliah;
-
+    //function construct
     public function __construct($nama,$matakuliah){
         parent:: __construct($nama);
         $this->matakuliah = $matakuliah;
     }
-    
+    //function akses Fitur
     public function aksesFitur() {
         return "Dosen " . $this->nama . " yang mengajar matakuliah " . $this->matakuliah . " memiliki akses untuk menginput nilai.";
     }
 
 }
-
+//membuat class dari turunan pengguna
 class Mahasiswa extends Pengguna {
     private $nim;
     private $jurusan;
@@ -405,13 +418,13 @@ class Mahasiswa extends Pengguna {
         $this->nim = $nim;
         $this->jurusan =$jurusan;
     }
-
+    //function akses fitur
     public function aksesFitur() {
         return "Mahasiswa bernama " . $this->nama . " dengan NIM " . $this->nim . ", jurusan " . $this->jurusan . " memiliki akses untuk melihat nilai.";
     }
     
 }
-
+//menampilkan data
 $dosen1 = new Dosen ("darno", "Inggiris");
 echo $dosen1->aksesFitur();
 echo "<br>";
