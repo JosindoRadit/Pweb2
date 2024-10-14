@@ -96,9 +96,11 @@ echo $mahasiswa1->updateJurusan("Mesin");
 echo $mahasiswa1->tampilakanData();
 echo $mahasiswa1->setNim("230302076");
 echo $mahasiswa1->tampilakanData();
+
 ```
 
-
+## Hasil Pembuatan Class mahasiswa
+<img src="img/hubu.PNG" >
 
 ## #Pembuatan Class Dosen
 ```php
@@ -170,5 +172,5 @@ $dosen1 = new Dosen("JosindoRaditAlbaran", "234563213", "Matamatika");
 echo $dosen1->tampilkanDosen();
 ```
 
-## Hasil Tugas 1 "Pembuatan Class dosen"
+## Hasil Pembuatan Class dosen
 <img src="img/hirh.PNG" >

@@ -14,7 +14,7 @@ class Mahasiswa {
     }
 
     public function tampilakanData() {
-        return "Saya $this->nama, dengan $this->nim, dari $this->jurusan.";
+        return "Saya $this->nama<br> dengan $this->nim<br> dari $this->jurusan.";
 
     }
 
