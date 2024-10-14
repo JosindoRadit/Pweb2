@@ -18,11 +18,6 @@ class Mahasiswa {
 
     }
 
-
-    public function updateJurusan($newJurusan) {
-        $this->jurusan = $newJurusan;
-    }
-
     public function setNim($newNim){
         $this->nim = $newNim;
     }
