@@ -11,7 +11,7 @@ class Dosen {
         $this->mataKuliah = $mataKuliah;
     }
     public function tampilkanDosen() {
-        return "saya $this->nama, dengan nip $this->nip, dengan mataKuliah $this->mataKuliah.";
+        return "Dosen : $this->nama<br> Nip : $this->nip<br> mataKuliah : $this->mataKuliah.";
 
     }
 }
