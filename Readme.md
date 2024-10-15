@@ -280,8 +280,8 @@ $mahasiswa1->getJurusan();
 <img src='img/encap.png'>
 
 ## 3. Inheritance
-adalah konsep dalam Bahasa berorientasi objek yang memungkinkan sifat dari
-suatu class diturunkan kepada class lain dalam sebuah hierarki class.
+adalah konsep dalam yang memungkinkan sifat dari
+suatu class diturunkan kepada class lain.
 
 ```php
 <?php
@@ -327,9 +327,8 @@ $mahasiswa2->getmataKuliah();
 <img src='img/inheri.png'>
 
 ## 4. Polymorphism
-adalah konsep dalam Bahasa berorientasi objek yang
-memungkinkan banyak class dengan fungsi berbeda untuk
-mengeksekusi atau berbagi antarmuka yang sama.
+adalah konsep yang memungkinkan banyak class dengan fungsi berbeda untuk
+mengeksekusi atau berbagi interface yang sama.
 
 ```php
 <?php
