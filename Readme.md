@@ -360,7 +360,7 @@ class Dosen extends pengguna{
     }
     //function akses Fitur
     public function aksesFitur(){
-        echo "Fitur Terbatas";
+        echo "Fitur  Terbatas";
 
     }
 
