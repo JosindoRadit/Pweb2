@@ -374,7 +374,7 @@ $mahasiswa2->aksesFitur();
 ?>
 ```
 ## Output
-<img src='img/poli.png'>
+<img src='img/poli.PNG'>
 
 ## 5. Abstraction
 Sebuah class yang tidak bisa digunakan untuk instansiasi 
