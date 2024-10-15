@@ -211,7 +211,7 @@ echo $mahasiswa1->tampilakanData();
 
 ```
 ## Output
-<img src='img/cb.png'>
+<img src='img/cb.PNG'>
 
 
 
@@ -277,7 +277,7 @@ $mahasiswa1->getJurusan();
 ?>
 ```
 ## Output
-<img src='img/encap.png'>
+<img src='img/encap.PNG'>
 
 ## 3. Inheritance
 adalah konsep dalam yang memungkinkan sifat dari
@@ -324,7 +324,7 @@ $mahasiswa2->getmataKuliah();
 ```
 ## Output
 
-<img src='img/inheri.png'>
+<img src='img/inheri.PNG'>
 
 ## 4. Polymorphism
 adalah konsep yang memungkinkan banyak class dengan fungsi berbeda untuk
@@ -433,4 +433,4 @@ echo $mahasiswa1->aksesFitur();
  ?>
 ```
 ## Output
-<img src='img/abstark.png'>
+<img src='img/abstark.PNG'>
