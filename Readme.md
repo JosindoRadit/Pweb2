@@ -220,7 +220,7 @@ echo $mahasiswa1->tampilakanData();
 
 ## 2. Encapsulation
 adalah cara “membungkus” data dan method yang menyusun kelas sehingga
-kelas dapat dipandang sebagai suatu modul dan menyembunyikannya dari dunia
+kelas dapat dipandang sebagai suatu modul dan menyembunyikannya dari dunia. enkapsulasi diterapkan untuk melindungi atribut dan menyediakan akses kepada mereka melalui metode getter dan setter.
 luar.
 ```php
 <?php
@@ -284,7 +284,7 @@ $mahasiswa1->getJurusan();
 
 ## 3. Inheritance
 adalah konsep dalam yang memungkinkan sifat dari
-suatu class diturunkan kepada class lain.
+suatu class diturunkan kepada class lain. Dalam kode ini, konsep inheritance (pewarisan) digunakan untuk membuat kelas Dosen yang merupakan turunan dari kelas Pengguna. Inheritance memungkinkan kelas Dosen untuk mewarisi atribut dan metode dari kelas Pengguna sehingga kode dapat lebih efisien dengan menghindari penulisan ulang atribut dan metode yang sudah ada.
 
 ```php
 <?php
@@ -331,7 +331,7 @@ $mahasiswa2->getmataKuliah();
 
 ## 4. Polymorphism
 adalah konsep yang memungkinkan banyak class dengan fungsi berbeda untuk
-mengeksekusi atau berbagi interface yang sama.
+mengeksekusi atau berbagi interface yang sama. dalam code ini konsep inheritance, di mana kelas Dosen mewarisi metode getNama() dari kelas pengguna. Jika kode ini menerapkan polimorfisme, bisa mengubah perilaku getNama() di dalam kelas Dosen sehingga metode tersebut memiliki perilaku yang berbeda.
 
 ```php
 <?php
@@ -381,7 +381,7 @@ $mahasiswa2->aksesFitur();
 
 ## 5. Abstraction
 Sebuah class yang tidak bisa digunakan untuk instansiasi 
-(pembentukan) object.
+(pembentukan) object. penggunaan abstrak pada code ini adalah Kelas Pengguna dideklarasikan sebagai abstrak dengan menggunakan kata kunci abstract. Ini berarti bahwa Anda tidak dapat membuat objek langsung dari kelas Pengguna; Anda hanya bisa membuat objek dari kelas yang mewarisinya, seperti Dosen atau Mahasiswa.
 
 ```php
 <?php
