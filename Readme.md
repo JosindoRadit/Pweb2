@@ -616,7 +616,7 @@ $guru2->getName();
 
 
 ## 3. Encapsulation
-adalah cara “membungkus” data dan method yang menyusun kelas sehingga kelas dapat dipandang sebagai suatu modul dan menyembunyikannya dari dunia luar.
+adalah cara “membungkus” data daan method yang menyusun kelas sehingga kelas dapat dipandang sebagai suatu modul dan menyembunyikannya dari dunia luar.
 ```php
 <?php
 // Mendefinisikan kelas abstrak 'person' dengan properti terlindungi $name dan konstruktor.
